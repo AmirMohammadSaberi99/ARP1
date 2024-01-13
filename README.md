@@ -1,5 +1,4 @@
-PS Team.
-ARP-Assignment1
+# PS Team. ARP-Assignment1
 # Drone.C
 
 ## Overview
