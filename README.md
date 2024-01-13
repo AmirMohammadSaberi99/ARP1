@@ -93,6 +93,25 @@ This C application is designed for monitoring the activity of various processes.
 ### Signal Handling
 - Implements a SIGINT signal handler (`handleSIGINT`) for controlled process termination.
 
+# Master.C
+
+## Overview
+This C application is designed for advanced process management in a Linux environment. It demonstrates the creation, execution, and monitoring of multiple child processes, along with robust error and signal handling.
+
+## Key Features
+
+### Process Creation and Execution
+- Utilizes `fork` and `execvp` for process creation and execution.
+- Manages multiple child processes, executing different programs based on command-line arguments.
+
+### Error and Signal Handling
+- Comprehensive error handling during process creation and execution.
+- Implements a SIGINT handler for controlled and graceful termination of the application.
+
+### Robust Process Management
+- The `main` function creates several child processes, managing their execution and waiting for their completion.
+- Integrates logging functionalities for monitoring process activities.
+
 ### Automatic Process Termination
 - Terminates processes automatically if they remain inactive beyond the specified time limit.
 
