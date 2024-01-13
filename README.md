@@ -1,6 +1,6 @@
 # ARP1
 ARP-Assignment1
-# Drone Simulation Project
+# Drone.c
 
 ## Overview
 This C program provides a comprehensive simulation of a drone's dynamics in a 2D environment, focusing on movement and boundary interactions. It is designed to model physical attributes of a drone and respond to user inputs, making it an excellent tool for understanding basic drone physics and control mechanisms.
