@@ -26,6 +26,32 @@ This C program provides a comprehensive simulation of a drone's dynamics in a 2D
 - **Continuous Position Update**: The main loop of the program continuously updates the drone's position based on user inputs.
 - **Signal Handling**: Includes a SIGINT signal handler for graceful termination of the program.
 
+
+# Window
+
+## Overview
+This C-based application simulates a drone's movement within a visualized area, using the NCurses library for graphics. It's particularly focused on user interaction, shared memory management, and graceful handling of system signals. The simulation offers an intuitive way to visualize and control a drone's movement in a confined space.
+
+## Key Features
+
+### Shared Memory Management
+- **Shared Memory Segment**: Establishes a shared memory segment using `shm_open` for efficient inter-process communication. This segment is crucial for storing and retrieving the drone's position and status.
+- **Resource Management**: Carefully handles system resources, ensuring they are properly allocated and freed when the program ends.
+
+### Visualization with NCurses
+- **Drone Area Visualization**: Utilizes `drawBorder` function to visually represent the boundaries of the drone's operating area.
+- **Drone Representation**: Employs `draw_character` to dynamically display the drone's current position, updating it in real time as the user interacts with the simulation.
+
+### User Interface and Interaction
+- **NCurses Library**: Leverages NCurses for handling the graphical user interface, making the application more engaging and interactive.
+- **Real-Time User Input**: Processes user input in real time, allowing for immediate response and control over the drone's movement within the simulation.
+
+### Signal Handling for Graceful Termination
+- **SIGINT Handling**: Implements a SIGINT signal handler (`processCtrlCSignal`) to catch interrupt signals (Ctrl+C). This ensures the application terminates gracefully, cleaning up resources and shared memory.
+- **Cleanup Operations**: Contains a dedicated `performCleanupAndEnd` function to execute necessary cleanup tasks before exiting the application.
+
+
+
 # C Server Application
 
 ## Overview
@@ -48,4 +74,25 @@ This project is a C-based server application that highlights key aspects of netw
 
 ### Logging
 - Includes functions to create log files and record server activity, aiding in monitoring and debugging.
+
+# Watch_dog
+
+## Overview
+This C application is designed for monitoring the activity of various processes. It continually checks their activity status and automatically handles processes that have been inactive for a specified duration.
+
+## Key Features
+
+### Process Monitoring
+- Monitors specific processes by reading their activity data from log files.
+- Utilizes a file pointer to access and read process information.
+
+### Inactivity Detection and Handling
+- Employs the `checkTime` function to detect process inactivity over a 60-second interval.
+- Gracefully handles inactive processes using SIGINT signals.
+
+### Signal Handling
+- Implements a SIGINT signal handler (`handleSIGINT`) for controlled process termination.
+
+### Automatic Process Termination
+- Terminates processes automatically if they remain inactive beyond the specified time limit.
 
