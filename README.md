@@ -26,5 +26,26 @@ This C program provides a comprehensive simulation of a drone's dynamics in a 2D
 - **Continuous Position Update**: The main loop of the program continuously updates the drone's position based on user inputs.
 - **Signal Handling**: Includes a SIGINT signal handler for graceful termination of the program.
 
+# C Server Application
 
+## Overview
+This project is a C-based server application that highlights key aspects of network communication and shared memory management. It is designed to handle client-server interactions and inter-process communication efficiently.
+
+## Features
+
+### Socket Management
+- Sets up and manages a network socket.
+- Binds the socket to an IP address and listens for client requests.
+- Accepts incoming connections and handles client requests.
+
+### Shared Memory Handling
+- Establishes and manages a named shared memory segment.
+- Facilitates inter-process communication and data sharing.
+
+### Signal Handling
+- Implements signal handlers for SIGINT (Ctrl+C) signals.
+- Ensures a graceful shutdown process, including the release of resources and closing of network connections.
+
+### Logging
+- Includes functions to create log files and record server activity, aiding in monitoring and debugging.
 
