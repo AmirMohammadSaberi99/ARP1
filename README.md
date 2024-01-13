@@ -1,6 +1,6 @@
 # ARP1
 ARP-Assignment1
-# Drone.c
+# Drone.C
 
 ## Overview
 This C program provides a comprehensive simulation of a drone's dynamics in a 2D environment, focusing on movement and boundary interactions. It is designed to model physical attributes of a drone and respond to user inputs, making it an excellent tool for understanding basic drone physics and control mechanisms.
@@ -27,7 +27,7 @@ This C program provides a comprehensive simulation of a drone's dynamics in a 2D
 - **Signal Handling**: Includes a SIGINT signal handler for graceful termination of the program.
 
 
-# Window
+# Window.C
 
 ## Overview
 This C-based application simulates a drone's movement within a visualized area, using the NCurses library for graphics. It's particularly focused on user interaction, shared memory management, and graceful handling of system signals. The simulation offers an intuitive way to visualize and control a drone's movement in a confined space.
@@ -52,7 +52,7 @@ This C-based application simulates a drone's movement within a visualized area, 
 
 
 
-# C Server Application
+# Server.C
 
 ## Overview
 This project is a C-based server application that highlights key aspects of network communication and shared memory management. It is designed to handle client-server interactions and inter-process communication efficiently.
@@ -75,7 +75,7 @@ This project is a C-based server application that highlights key aspects of netw
 ### Logging
 - Includes functions to create log files and record server activity, aiding in monitoring and debugging.
 
-# Watch_dog
+# Watch_dog.C
 
 ## Overview
 This C application is designed for monitoring the activity of various processes. It continually checks their activity status and automatically handles processes that have been inactive for a specified duration.
